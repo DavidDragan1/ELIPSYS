@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>ELIPSYS - English Lorem Ipsum Placeholder Text Generator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+		<script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+					<h1><strong>ELIPSYS </strong><br />
+					English "Lorem Ipsum" Placeholder Text Generator<br />
+					</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>Welcome to ELIPSYS<br />
+							- the English Lorem Ipsum Placeholder Text Generator</h2>
+						</header>
+						<p>ELIPSYS was created upon the evidentiation of mundanity. <br />Regular placeholder text is exceedingly (and needlessly) boring.
+							Although Lorem Ipsum text has been the standard in typesetting for the past several hundred years, it has recently been receiving increased criticism for its lack of personality.
+						</p>
+						<p></p> 
+						<b>ELIPSYS allows you to generate placeholder text that:</b>
+						<ol> 
+								<li>
+									Is SEO-friendly, due to its coherent English vocabulary.
+								</li>
+								<li>
+									Adds a touch of personality to your work, creating more engaging presentations.
+								</li>
+								<li>
+									Won't lull your audience to sleep, while still letting your work shine.
+								</li>
+							</ol>
+						
+						<ul class="actions">
+							<li><a href="#form" class="button">Try Now for FREE</a></li>
+						</ul>
+					</section>
+
+
+
+				<!-- Three -->
+					<section id="form">
+						<h2>Generate Placeholder Text</h2>
+						<p>Fill in the form to generate your placeholder text!</p>
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form onsubmit="return false">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall">
+											<label>Flavour</label>
+											<select name="Flavour" id="flavour">
+												<optgroup label="Flavour">
+													<option value="tone1">History of Writing</option>
+													<option value="tone2">Runes</option>
+													<option value="tone3">Visual Effect of Typography</option>
+													<option value="tone4">Visual Use of Colours</option>
+													<option value="tone5">What is Lorem Ipsum</option>
+													<option value="tone6">Dreamscript - Unicorns and Marshmallows!</option>
+												</optgroup>
+											</select>
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<label>Number of Paragraphs</label>
+											<input type="number" id="paragraph" name="paragraph" min="1" max="10">
+										</div>
+										<ul class="actions">
+											<li><input py-click="generate" type="submit" class="primary" value="Generate Now" /></li>
+										</ul>
+									</div>
+								</form>
+								<div class="col-12">
+									<textarea name="message" id="output" placeholder="Your generated text will appear here" rows="4"></textarea>
+								</div>
+							</div>
+							<div class="col-4 col-12-small">
+								<h3>Advertisement</h3>
+								<div style="object-fit: contain">
+									<img style="object-fit: contain" src="https://picsum.photos/400/600">
+								</div>
+								<small>Advertise <a href="#">Here</a></small>
+							</div>
+						</div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>Copyright &copy; 2024 - David Dragan</li><li>Design: <a href="https://daviddragan1.github.io/ddd/">D.D.Digital</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<!-- Generator PyScript -->
+			<script type="py" src="./main.py" ></script>
+
+	</body>
+</html>
