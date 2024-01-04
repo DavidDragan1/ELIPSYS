@@ -78,13 +78,8 @@ def generate(event):
 
     # Assign paragraph number
     paragraph_number = 0
-    while paragraph_number < 1 or paragraph_number > 10:
-        try:
-            paragraph_number = document.querySelector("#paragraph")
-            if paragraph_number < 1 or paragraph_number > 10:
-                print("Paragraph number must be between 1 and 10.")
-        except ValueError:
-            print("Invalid input. Please enter a valid number.")
+    paragraph_number = document.querySelector("#paragraph")
+     
 
     # Get the list of text items based on user input
     selected_texts = tones[tone_type][:paragraph_number]
