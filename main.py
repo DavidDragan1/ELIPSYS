@@ -86,4 +86,4 @@ def generate(event):
 
 # Attach the 'generate' function to the button click event
 generate_button = document.querySelector("#generateButton")
-generate_button.bind("click", generate)
+generate_button.addEventListener("click", generate)
