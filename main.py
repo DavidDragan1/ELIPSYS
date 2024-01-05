@@ -87,3 +87,6 @@ def generate(event):
 # Attach the 'generate' function to the button click event
 generate_button = document.querySelector("#generateButton")
 generate_button.addEventListener("click", generate)
+
+# Enable debugging in Pyodide
+pyodide.setDebug(True)
