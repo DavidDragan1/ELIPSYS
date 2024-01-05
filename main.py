@@ -3,7 +3,7 @@ from pyscript import document
 
 
 tones = {
-    # tone1 = history of writing
+    # history of writing
     'tone1': ['The history of writing and typography unfolds as a rich tapestry, revealing the profound evolution of human communication and the artistic expression of ideas through symbols. From the earliest cave paintings to the digital fonts of the present era, this narrative reflects the inexorable human quest for meaningful connection and the refinement of methods to convey thoughts.',
               'Prehistoric times witnessed the emergence of rudimentary forms of writing, as evidenced by the symbolic cave paintings that depicted aspects of daily life, hunting scenes, and spiritual beliefs. These early pictographs served as the foundational steps toward more structured and systematic modes of communication.',
               'In Mesopotamia, around 3200 BCE, the advent of cuneiform writing marked a pivotal moment in the history of writing. This wedge-shaped script, impressed onto clay tablets with a stylus, enabled the recording of laws, literature, and economic transactions in ancient Sumerian and Akkadian societies.',
@@ -25,7 +25,7 @@ tones = {
               'In the modern era, runes have experienced a resurgence of interest among those exploring esoteric and neo-pagan practices. The runic alphabet is often used for divination, meditation, and as a form of personal symbolism. Contemporary runemasters and enthusiasts study the historical context and meanings associated with each rune to preserve and revive this ancient tradition.',
               'In the contemporary world, the revival of interest in runes extends beyond spiritual or mystical circles. Scholars, linguists, and historians delve into runic inscriptions to unlock the secrets of the past and gain insights into the languages, cultures, and societies that utilized this unique writing system. The study of runes has become an interdisciplinary endeavor, combining linguistics, archaeology, and anthropology to paint a richer picture of the people who once wielded these symbols. As we unravel more of the mysteries hidden within runic inscriptions, we not only deepen our understanding of ancient civilizations but also highlight the enduring allure of runes as a bridge between the tangible and the mystical, connecting us to the roots of human expression and spirituality. In this way, the fascination with runes transcends individual practices and becomes a shared journey of discovery, fostering a greater appreciation for the profound cultural legacy embedded in these ancient symbols.',
               'Runes represent a fascinating chapter in the history of writing and symbolic communication. Originating as a utilitarian script, runes evolved into a profound and mystical system deeply intertwined with the spiritual beliefs and practices of the Norse and Germanic peoples. Today, runes continue to captivate the imagination of those drawn to the ancient mysteries encoded within these enigmatic symbols.'],
-    # typography - visual effect
+    # visual effect of typography
     'tone3': ['Typography, the art and technique of arranging type, has evolved into a powerful design element that can significantly impact the visual appeal and effectiveness of various forms of communication. One of the key components of typography is the selection and use of fonts. Fonts, or typefaces, play a crucial role in conveying a message, setting a tone, and enhancing the overall visual experience.',
               'The choice of fonts goes beyond mere legibility; it involves a careful consideration of the intended message and the target audience. Serif fonts, with their elegant and traditional look, often convey a sense of formality and authority, making them suitable for documents like resumes or academic papers. On the other hand, sans-serif fonts are more modern and clean, making them a popular choice for websites and digital interfaces.',
               'Font size is another crucial factor in visual communication. A well-balanced hierarchy of font sizes helps guide the reader\'s attention, emphasizing key points and creating a more engaging reading experience. Headings and subheadings with larger font sizes can break up content, making it more scannable and digestible.',
@@ -77,13 +77,15 @@ def generate(event):
     tone_type = document.querySelector("#flavour")
 
     # Assign paragraph number
-    paragraph_number = 0
     paragraph_number = document.querySelector("#paragraph")
-     
 
     # Get the list of text items based on user input
     selected_texts = tones[tone_type][:paragraph_number]
 
     # Output the selected text items
     output_box = document.querySelector("#output")
-    output_box.innerText = selected_texts
+    for text_item in selected_texts:
+        output_box.innerText = text_item
+
+
+
